@@ -8,11 +8,6 @@ cout<<"The person is experinced?"<<"Enter 1 for yes,0 for No:";
 cin>>exper;
 cout<<"Enter age of a person:";
 cin>>age;
-if(age>35 && exper)
-salary=6000;
-else if(age>28 && age<35 && exper)
-salary=3000;
-else 
-salary=2000;
+salary=(exper)?((age>35)?6000:(age>28)?4800:3000):2000;
 cout<<"The salary of the person is"<<salary<<"\n";
 }
